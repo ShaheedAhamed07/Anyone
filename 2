@@ -1,0 +1,18 @@
+Program 2 
+Creating and Managing Virtual Networks in OpenNebula 
+Steps: 
+1. Create a Virtual Network: 
+• Log into Sunstone and go to "Virtual Networks". 
+• Click "Create" to define a new network: 
+• Give it a name (e.g., lab_network). 
+• Set the Bridge type to Virtual and define the IP Range (e.g.,192.168.0.0/24). 
+2. Attach the Network to a VM: 
+•  When creating a new VM, under the Network section, select the lab_network you created. 
+•  Alternatively, you can add the network to an existing VM by modifying the VM’s Network Interface. 
+3. Launch a VM: 
+• Go to the Virtual Machines section, click "Create", and select the lab_network virtual network. 
+• Start the VM, and once it's running, go to the VM’s network details. 
+• Verify the VM's IP address is within the network range (e.g.,192.168.0.X). 
+4. Test Connectivity Between VMs: 
+• Launch a second VM in the same network. 
+• From the first VM, test the connectivity by pinging the second VM:ping <second-vm-ip>
